@@ -26,7 +26,6 @@ input[type="text"] {
   text-align: right;
   padding-right: 20px;
   background-color: black;
-  box-decoration-break: slice;
 }
 form .buttons {
   width: 300px;
