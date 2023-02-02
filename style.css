@@ -13,24 +13,22 @@ body {
   background-color: rgb(6, 20, 95);
 }
 .conteiner {
-  width: 350px;
+  width: 300px;
   background-color: black;
   border-radius: 20px;
 }
 input[type="text"] {
   height: 70px;
-  width: 270px;
+  width: 280px;
   border-radius: 20px;
   font-size: 24px;
   color: white;
   text-align: right;
-  padding-right: 20px;
+
   background-color: black;
 }
 form .buttons {
   width: 300px;
-  margin: 0px 25px 0 25px;
-  padding: 10px 0;
 }
 input[type="button"] {
   width: 58px;
@@ -39,7 +37,7 @@ input[type="button"] {
   border-radius: 50px;
 }
 input[class="null"] {
-  width: 130px;
+  width: 100px;
 }
 input[class="Math-oper"] {
   background-color: orange;
