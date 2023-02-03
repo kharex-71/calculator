@@ -3,45 +3,53 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: rgb(6, 20, 95);
+  background-color: lightblue;
 }
-.conteiner {
-  width: 300px;
-  background-color: black;
-  border-radius: 20px;
+.main {
+  width: 320px;
+  height: 450px;
+  border-style: ridge;
+  border-radius: 5%;
+  background-color: rgb(60, 80, 70);
 }
-input[type="text"] {
-  height: 70px;
-  width: 280px;
-  border-radius: 20px;
-  font-size: 24px;
-  color: white;
-  text-align: right;
 
-  background-color: black;
+.conteiner input {
+  width: 290px;
+  height: 90px;
+  font-size: 36px;
+  text-align: right;
+  border-style: none;
+  background-color: rgb(60, 80, 70);
+  color: lightblue;
 }
-form .buttons {
-  width: 300px;
+#equals {
+  width: 135px;
 }
-input[type="button"] {
-  width: 58px;
-  height: 55px;
-  margin: 2px;
-  border-radius: 50px;
+
+.math-num {
+  color: lightblue;
+  font-size: large;
 }
-input[class="null"] {
-  width: 100px;
+
+.math-oper {
+  font-size: 22px;
+  color: orangered;
 }
-input[class="Math-oper"] {
-  background-color: orange;
+.keyboard button {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border-radius: 10%;
+  border-style: hidden;
+  background-color: rgb(10, 35, 45);
+  box-shadow: 1px 1px lightblue inset;
 }
-input[value] {
-  font-size: 20px;
+.keyboard button:hover {
+  background-color: rgb(60, 80, 70);
 }
