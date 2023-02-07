@@ -1,55 +1,101 @@
 * {
-  padding: 0;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
 body {
+  font-size: 16px;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+body {
+  background: #ff67cc;
   display: flex;
-  text-align: center;
-  justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background-color: lightblue;
-}
-.main {
-  width: 320px;
-  height: 450px;
-  border-style: ridge;
-  border-radius: 5%;
-  background-color: rgb(60, 80, 70);
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.conteiner input {
-  width: 290px;
-  height: 90px;
-  font-size: 36px;
-  text-align: right;
-  border-style: none;
-  background-color: rgb(60, 80, 70);
-  color: lightblue;
-}
-#equals {
-  width: 135px;
+input {
+  border: none;
+  outline: none;
 }
 
-.math-num {
-  color: lightblue;
-  font-size: large;
+input:focus {
+  outline: none;
 }
 
-.math-oper {
-  font-size: 22px;
-  color: orangered;
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
 }
-.keyboard button {
-  width: 60px;
-  height: 60px;
-  margin: 5px;
-  border-radius: 10%;
-  border-style: hidden;
-  background-color: rgb(10, 35, 45);
-  box-shadow: 1px 1px lightblue inset;
+
+button:focus {
+  outline: none;
 }
-.keyboard button:hover {
-  background-color: rgb(60, 80, 70);
+
+.calculator {
+  background: #212532;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75;
+  width: 325px;
+  border: 1px solid #333;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.screen {
+  grid-column: 1 / 5;
+  border-radius: 0.75rem;
+  font-size: 2rem;
+  height: 6rem;
+  color: #fff;
+  background: #333849;
+  text-align: end;
+  padding: 0.5rem;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.symbol,
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  aspect-ratio: 1;
+  font-size: 1.25rem;
+  color: #fff;
+  transition: 0.15s ease;
+}
+
+symbol {
+  background: #3d923d;
+}
+.symbol:hover {
+  background: #9d293d;
+}
+.number {
+  background: #333849;
+}
+.number:hover {
+  background: #333849ac;
 }
