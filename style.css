@@ -16,7 +16,7 @@ body {
   height: 450px;
   border-style: ridge;
   border-radius: 5%;
-  background-color: rgb(60, 80, 70);
+  background-color: #16bac5;
 }
 
 .conteiner input {
@@ -25,22 +25,13 @@ body {
   font-size: 36px;
   text-align: right;
   border-style: none;
-  background-color: rgb(60, 80, 70);
+  background-color: #16bac5;
   color: lightblue;
 }
 #equals {
   width: 135px;
 }
 
-.math-num {
-  color: lightblue;
-  font-size: large;
-}
-
-.math-oper {
-  font-size: 22px;
-  color: orangered;
-}
 .keyboard button {
   width: 60px;
   height: 60px;
@@ -49,7 +40,10 @@ body {
   border-style: hidden;
   background-color: rgb(10, 35, 45);
   box-shadow: 1px 1px lightblue inset;
+  font-size: larger;
+  font-weight: 600;
+  color: antiquewhite;
 }
 .keyboard button:hover {
-  background-color: rgb(60, 80, 70);
+  background-color: #16bac5;
 }
